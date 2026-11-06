@@ -1,4 +1,6 @@
-from app import add, greet
+#from app import add, greet
+from app import add, greet, multiply
+
 
 
 def test_add():
@@ -9,3 +11,7 @@ def test_add():
 def test_greet():
     """Проверяет, что greet('PM') возвращает 'Hello, PM!'."""
     assert greet("PM") == "Hello, PM!"
+# проверка умножения
+def test_multiply():
+    """Проверяет, что 2 * 3 = 6."""
+    assert multiply(2, 3) == 6
